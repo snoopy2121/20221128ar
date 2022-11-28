@@ -1,0 +1,57 @@
+
+
+body {
+    padding: 0;
+    margin: 20px;
+    background-color: rgb(254, 254, 217);
+  }
+/* 大枠ボックス */
+.layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* 背景画像の読み込み */
+  .layer-bg{
+    background: url("sakura_d1.jpg") no-repeat 0 0;
+    background-size: 100%;
+  }
+  
+  /* 重ねる文字の基本設定 */
+  .layer-txt{
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    color: rgb(251, 201, 93);
+    letter-spacing: 0.4rem;
+  }
+  
+  /* SP向けの設定 */
+  @media screen and (max-width: 600px) {
+    .layer-txt{
+     font-size: 1.4rem;
+     padding: 4rem 0;
+    }
+  }
+  
+  /* PC向けの設定 */
+  @media screen and (min-width: 601px) {
+    .layer-txt{
+      font-size: 2rem;
+      padding: 8rem 0;
+    }
+  }
+
+  
+  
+  .title {
+    margin: 0;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6347;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: flowing-anim 8s;
+  }
